@@ -132,9 +132,6 @@ firmware_directories /vendor/firmware_mnt/image/
 # socinfo
 /sys/devices/soc0           serial_number            0000    root    root
 
-# Charger
-/sys/class/qcom-battery     input_suspend            0660    system  system
-
 # mius iio devices
 /dev/iio:device*                                        0660   system     system
 /sys/bus/iio/devices/iio:device* buffer/enable                  0600 system system
@@ -143,6 +140,3 @@ firmware_directories /vendor/firmware_mnt/image/
 
 # Fingerprint
 /dev/goodix_fp            0660   system     system
-
-# Battery
-/sys/class/qcom-battery     reverse_chg_mode            0644    system  system
